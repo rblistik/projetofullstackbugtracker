@@ -1,0 +1,37 @@
+@model PacotesTuristicos
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<form method="POST" asp-action="Cadastro">
+
+    
+    <p>
+        <label asp-for="Nome">Nome:</label>
+        <input asp-for="Nome">
+    </p>
+    
+    <p>
+        <label asp-for="estado">estado:</label>
+        <input asp-for="estado">
+    </p>
+    <p>
+        <label asp-for="produto">produto:</label>
+        <input asp-for="produto" type="string">
+    </p>
+    <p>
+        <label asp-for="cv">cv:</label>
+        <input asp-for="cv" type="string">
+    </p>
+    <p>
+        <label asp-for="Usuario">Usuario:</label>
+        <input asp-for="Usuario">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
+</form>
+<p>
+    @ViewBag.Mensagem
+</p>
